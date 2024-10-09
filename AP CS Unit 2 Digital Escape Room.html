@@ -26,7 +26,7 @@ tw-link {
 
 You and your team are elite astronauts from the Interstellar Exploration Federation. During a routine exploration mission, your spaceship has been pulled into a strange nebula known as the Binary Nebula. The ship&#39;s systems have locked down, and you are trapped. The nebula is known to interfere with technology, causing it to operate using complex computer science principles. Your mission is to navigate through these challenges, restart your ship&#39;s systems, and escape the nebula.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hy0jPM6-tSc19ITM_MTs-QMMg_X29wEu&quot; height=500px&gt;
+<img src="astronauts.png">
 
 
 [[Enter through the airlock into the ship]] 
@@ -72,7 +72,7 @@ The engineering deck lies above the engineering room. The complex calculations t
 Every inch of the ship is a testament to an advanced civilization&#39;s technological prowess, yet its emptiness suggests a hasty or unexpected departure. Each room, each console, each gadget is a puzzle waiting to be solved, a mystery waiting to be uncovered. Your challenge is to navigate through these puzzles, understand the ship&#39;s complex, computer-driven language, and find a way to command the ship to take you home.</tw-passagedata><tw-passagedata pid="3" name="Start the ships engine" tags="" position="1250,500" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
 The button to start the engine is located on a large console. 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Ho1pYQsLemnf0dxDSyi9PtyWJM5WEU7f&quot; height=500px&gt;
+<img src="startenginebutton.png">
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 [[Press the button]]
@@ -80,15 +80,16 @@ The button to start the engine is located on a large console.
 
 &#39;&#39;You walk up to the communication center&#39;&#39;
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1mojTn0iRxyLVSs3wRzM1XayDtJ3eBUN0&quot; height=500px&gt;
-It seems the communication center is expecting an input of the word &quot;ADMIN&quot;. However it seems it wont accept english. This needs to be in ASCII. Enter the word &quot;admin&quot; utilizing ASCII. Do not put spaces in between each binary representatoion, just a commma. 
+<img src="commcenter.gif">
+
+It seems the communication center is expecting an input of the word &quot;ADMIN&quot;. However it seems it wont accept english. You will need to find the ASCII decimal value and convert it to its binary number for each letter. Enter the word &quot;admin&quot; utilizing ASCII. Do not put spaces in between each binary representatoion, just a commma. 
 
 &#39;&#39;Example:&#39;&#39; 01100100,01101011,01110010
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Solve&quot;)[
   (set: $answer to (prompt: &quot;Display ADMIN in Binary:&quot;, &quot;&quot;))
-  (if: $answer is &quot;01000001,01000100,01001101,01001001,01001110&quot;)[
+  (if: $answer is &quot;01000001,01000100,01001101,01001001,01001110&quot;)[ 1000001,1000100,1001101,1001001,1001110
   	  (set: $completedTasks to $completedTasks + 1)
       (goto: &quot;rebootcommscomplete&quot;)
   ](else:)[
@@ -101,9 +102,8 @@ It seems the communication center is expecting an input of the word &quot;ADMIN&
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[You walk into the library. In the year 2089 books were outlawed due to the waste in resources that resulted from the climate crisis. Before you lie informational holocrons, they are in the shape of cubes. It seems the holocrons have been corrupted. You are looking for a famous scientists name of long ago, you must have the name of this man in order to authenticate the ships jump drive,
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hpf4WHfhluw0EUJKTx60CaBHsppVutnJ&quot; height=500px&gt;
-
-&quot;You find a string of binary code that is actually an ASCII representation of a famous scientist&#39;s name. Can you decode it?&quot;
+<img src="library.png">
+You find a string of binary code that is actually an ASCII representation of a famous scientist&#39;s name. Can you decode it?&quot;
 
 &#39;&#39;01000001 01101100 01100001 01101110 01010100 01110101 01110010 01101001 01101110 01100111&#39;&#39;
 
@@ -122,9 +122,9 @@ It seems the communication center is expecting an input of the word &quot;ADMIN&
 
 You walk into the server room. An expansive room that cant possibly fit the bouds of this ship. It seems the servers are broken and need the reboot sequence code, which is 38. However the console is only accepting that value in Binary. Please convert 38 to binary and input into the server. Hint: please ensure you are using enough place values so its 1 byte of data.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hp2WfNVY3bZl-QVMbmubZIbQNUPn69f6&quot; height=500px&gt;
+<img src="serverroom.png">
 
-[[Returnto  the the Main Hull|Enter through the airlock into the ship]]
+[[Return to  the the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Input Binary Value&quot;)[
   (set: $answer to (prompt: &quot;What&#39;s the binary representation of 38?&quot;, &quot;&quot;))
   (if: $answer is &quot;00100110&quot;)[
@@ -154,7 +154,7 @@ You can&#39;t afford any mistakes. Which option will you choose to get the engin
 
 &#39;&#39;Beware, due to the spaceships firmware, getting this answer wrong will cause all tasks to be reset to 0, you would need to complete all questions again. Be careful.&#39;&#39;
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HqlH6uIBllNN6UMArJ_ax43gUVIxSC3z&quot; height=500px&gt;
+<img src="serverterminal.png">
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Choose an option&quot;)[
@@ -171,13 +171,14 @@ You can&#39;t afford any mistakes. Which option will you choose to get the engin
 
 The machine comes online. You have re-enabled interspace communications, an important and neccessary step when being able to pilot the spaceship.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1mNmOw6zrWhi9TAT85G76c-ThCmkhmuDg&quot; height=500px&gt;
+<img src="com.png">
+
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 </tw-passagedata><tw-passagedata pid="9" name="Press the button" tags="" position="1375,500" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
 You press the button...
 
-(if: $completedTasks is 10)[
+(if: $completedTasks > 10)[
   (goto: &quot;victory&quot;)
 ](else:)[
   &quot;Only&quot; $completedTasks &quot;out of 10 tasks completed.  Complete all tasks to start the ship.&quot;
@@ -192,7 +193,7 @@ You press the button...
 
 Your ship groans and lurches forward into open space. You have completed the spaceship repairs, you set away on your journey back home.. Please ensure you take a screenshot of this page captain $name!
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HoKit4Q34SkgzINEKXydc7aZGbUJmJTp&quot; height=500px&gt;
+<img src="ship.gif">
 
 [[Return to the the Main Hull|Intro]]</tw-passagedata><tw-passagedata pid="11" name="servercomplete" tags="" position="1000,800" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
@@ -200,13 +201,13 @@ The terminal reboots, you have re-enabled the brains of this ship, it controls a
 
 (text-style: &quot;fade-in-out&quot;)[Terminal online, awaiting input... ]
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HpRInrbmjnqrz2BkTKF-b0EgYEFsxWQ_&quot; height=500px&gt;
+<img src="term.webp">
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]</tw-passagedata><tw-passagedata pid="12" name="librarycomplete" tags="" position="1400,375" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[You now know the authentication phrase is &quot;Alan Turing&quot; you will absolutely need this later.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HqKHTCkbhPasGiOvrYZR6ZDl18xzwOAG&quot; height=500px&gt;
+<img src="alan.jpeg">
 
 [[Return the the Main Hull|Enter through the airlock into the ship]]]</tw-passagedata><tw-passagedata pid="13" name="enginecomplete" tags="" position="1175,775" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
@@ -220,7 +221,7 @@ You enter the main computer room. A gigantic, complex system of servers, hardwar
 
 As you approach the terminal, you see two options on the screen: &#39;Troubleshoot in Binary&#39; and &#39;Troubleshoot in Python&#39;. You know you need to choose the option that abstracts away most of the low-level details, letting you focus on the problem at hand rather than the intricacies of the machine.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hr1qjIDrLHhzmktUhcJmqCoQmmHjZn57&quot; height=500px&gt;
+<img src="serverterminal.png">
 
 [[Return to the main hull|Enter through the airlock into the ship]]
 (link: &quot;Input Your Choice&quot;)[
@@ -242,11 +243,11 @@ The computers light up, they process the information gathered for the life suppo
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]</tw-passagedata><tw-passagedata pid="16" name="Climb up to the power management chamber" tags="" position="775,350" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
-You step into the power management chamber. Humming with electricity, the room houses the main power distribution panel. An alert is flashing, and a console at the heart of the room displays a rapidly escalating binary number. The etnire room is flashing in warning.
+You step into the power management chamber. Humming with electricity, the room houses the main power distribution panel. An alert is flashing, and a console at the heart of the room displays a rapidly escalating binary number. The entire room is flashing in warning.
 
 The number is perilously nearing the upper limit of an 8-bit binary value (11111111). Your task is to key in the correct decimal equivalent of this binary number before it surpasses its maximum limit.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hr9QD8jnv3cnn_SMUpjqtPequlfxPmXu&quot; height=500px&gt;
+<img src="powercamberalarm.gif">
 
 [[Return to the main hull|Enter through the airlock into the ship]]
 (link: &quot;Input Your Answer&quot;)[
@@ -264,7 +265,7 @@ The number is perilously nearing the upper limit of an 8-bit binary value (11111
 
 The power chamber falls eerily quiet as the alarm stops abruptly. The console screen now glows with a tranquil green. You&#39;ve successfully thwarted a binary overflow, recognizing the maximum value an 8-bit binary number can attain. The power management chamber is once again operational within safe constraints.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hr4bmvE075rrZuMuLEeEgG8sRtOxuCH9&quot; height=500px&gt;
+<img src="powerchamberalarm.png">
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 </tw-passagedata><tw-passagedata pid="18" name="Enter the Media Library" tags="" position="1250,250" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
@@ -275,7 +276,7 @@ Lossless compression ensures no data is lost during the compression process, mai
 
 Make your choice considering the situation.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hs5Dk9nXHsny9cIaEiQEbizpt6jEtTye&quot; height=500px&gt;
+<img src="spacetheatre.png">
 
 [[Return to the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Choose Your Answer&quot;)[
@@ -293,14 +294,14 @@ Make your choice considering the situation.
 
 With the decision made to use lossy compression, you watch as the system begins the process of compressing the video files. The storage capacity indicator slowly decreases. It&#39;s a tough compromise, but necessary for the survival of the ship&#39;s other, more critical systems.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1Hs5Dk9nXHsny9cIaEiQEbizpt6jEtTye&quot; height=500px&gt;
+<img src="spacetheatre.png">
 
 [[Return to the Main Hull|Enter through the airlock into the ship]]
 </tw-passagedata><tw-passagedata pid="20" name="Head into the navigation bay" tags="" position="775,175" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
 
 You enter the Navigation Bay, a room filled with star maps, monitors, and calculation tools. The central computer is blinking with a warning message - the autopilot system has malfunctioned. The coordinates for your spaceship&#39;s next jump are stored in binary, and you&#39;ll need to input them manually into the navigation system. The binary coordinates are &quot;1011010&quot;. 
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HudkFgbD5gtS5PT3zkNgS6ZqE7SSv1Yv&quot; height=500px&gt;
+<img src="navgif.gif">
 
 [[Return to the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Input Decimal Value&quot;)[
@@ -318,7 +319,7 @@ You enter the Navigation Bay, a room filled with star maps, monitors, and calcul
 
 The navigation systems hum to life as you input the correct coordinates. The spaceship now knows where it&#39;s heading, thanks to you.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HtnaRgr9yIAfIjT3AvwPk8LBKNMQFqpi&quot; height=500px&gt;
+<img src="fixednav.png">
 
 [[Return to the Main Hull|Enter through the airlock into the ship]]
 </tw-passagedata><tw-passagedata pid="22" name="Hop into the engineering deck" tags="" position="1050,100" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
@@ -327,7 +328,7 @@ You walk into the engineering deck, a room filled with complex systems and blink
 
 The intricate operations are hidden from the engineers, simplifying their interactions. They can control the spaceship&#39;s speed, direction, and even stop the propulsion system without understanding all the underlying complexities. Theres not much to do in here....but what is the concept described above?&quot;
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HvVCSzyArCbvEherZxC9oEB7wuOMIsYN&quot; height=500px&gt;
+<img src="engdeck.png">
 
 [[Return to the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Provide Answer&quot;)[
@@ -345,7 +346,7 @@ The intricate operations are hidden from the engineers, simplifying their intera
 
 The engineering console hums with life, acknowledging your understanding. The principle of abstraction truly simplifies interactions, enabling engineers to control the massive spaceship without getting lost in its complexities.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HvVCSzyArCbvEherZxC9oEB7wuOMIsYN&quot; height=500px&gt;
+<img src="kermitengconsole.webp">
 
 [[Return to the Main Hull|Enter through the airlock into the ship]]
 </tw-passagedata><tw-passagedata pid="24" name="Run into the recreation room" tags="" position="1375,700" size="100,100">(text-color:&quot;red&quot;)[&#39;&#39;Completed Tasks:&#39;&#39; $completedTasks / 10]  |  (text-color:&quot;green&quot;)[&#39;&#39;Score/ Grade:&#39;&#39; $score / 100]
@@ -360,8 +361,7 @@ The system requires the RGB values for the color Red to be inputted. For this sy
 
 Write your RGB values without parenthesis, however put a space between values and commas. Example &quot;100, 0, 23&quot;
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HveY2pMXUDO4pGMRLZxbGNY853xUBNFw&quot; height=500px&gt;
-
+<img src="field.png">
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 (link: &quot;Input RGB Value&quot;)[
@@ -378,7 +378,7 @@ Write your RGB values without parenthesis, however put a space between values an
 
 The LED screen flickers and then comes back to life, now displaying a calming cycle of various colors. You&#39;ve successfully recalibrated the RGB values, bringing a bit of warmth and comfort back into the cold emptiness of space.
 
-&lt;img src=&quot;https://drive.google.com/uc?export=view&amp;id=1HveY2pMXUDO4pGMRLZxbGNY853xUBNFw&quot; height=500px&gt;
+<img src="turing cube.png">
 
 [[Return to the the Main Hull|Enter through the airlock into the ship]]
 </tw-passagedata></tw-storydata>
